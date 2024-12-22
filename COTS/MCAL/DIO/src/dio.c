@@ -190,9 +190,11 @@ MDIO_enu_errorStatus_t MDIO_enuSetPortValue(MDIO_enu_PORTS_t Copy_enuPortNum,uin
     if(status!=MDIO_enu_OK){
         return status;
     }
-    if(port->DDR!=MDIO_enu_PORT_HIGH){
+
+    if(copy_u8PortVal&~(port->DDR)){
         return MDIO_enu_INPUT_PIN;
     }
+    
     port->DOR = copy_u8PortVal;
     return status;
 }
