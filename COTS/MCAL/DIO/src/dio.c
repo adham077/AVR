@@ -192,12 +192,13 @@ MDIO_enu_errorStatus_t MDIO_enuSetPortValue(MDIO_enu_PORTS_t Copy_enuPortNum,uin
     }
 
     uint8_t value = ((port->DDR)&copy_u8PortVal) | (~(port->DDR)&(port->DOR));
-
-    if(value&(~copy_u8PortVal)){
+    
+    //I will handle the input pins from within the api the user doesnt have to explicitly pass the value
+    /*if(value&(~copy_u8PortVal)){
         return MDIO_enu_INPUT_PIN;
-    }
+    }*/
 
-    port->DOR = copy_u8PortVal;
+    port->DOR = value;
     return status;
 }
 
