@@ -28,9 +28,10 @@ typedef enum{
 }MDIO_enu_errorStatus_t;
 
 typedef enum{
+    MDIO_ENU_NOT_AVAILABLE=0,
     MDIO_enu_OUTPUT,
     MDIO_enu_INPUT_PULLUP,
-    MDIO_enu_INPUT_PULLDOWN
+    MDIO_enu_INPUT_PULLDOWN,
 }MDIO_enu_pinConfig_t;
 
 typedef enum{
@@ -62,5 +63,8 @@ MDIO_enu_errorStatus_t MDIO_enuGetPinValue(MDIO_enu_PORTS_t Copy_enuPortNum,MDIO
 MDIO_enu_errorStatus_t MDIO_enuSetPortConfigration(MDIO_enu_PORTS_t Copy_enuPortNum,MDIO_enu_pinConfig_t Copy_enuConfigration);
 
 MDIO_enu_errorStatus_t MDIO_enuSetPortValue(MDIO_enu_PORTS_t Copy_enuPortNum,uint8_t copy_u8PortVal);
+
+void MDIO_vInit(void);
+
 
 #endif

@@ -1,5 +1,5 @@
-#include "DIO_Config.h"
 #include "dio.h"
+#include "DIO_CFG.h"
 #define  MASK(X)  ((uint8_t)(1<<X))
 #define NULL ((void*)0)
 
@@ -202,3 +202,29 @@ MDIO_enu_errorStatus_t MDIO_enuSetPortValue(MDIO_enu_PORTS_t Copy_enuPortNum,uin
     return status;
 }
 
+void MDIO_vInit(void){
+    MDIO_vpinsInit();
+    int i=0;
+    for(;i<NO_OF_PORTS;i++){
+        int j=0;
+        for(;j<NO_OF_PINS;j++){
+            switch (MDIO_arrPinConfig[i][j])
+            {
+            case MDIO_enu_OUTPUT:
+                MDIO_enuSetPinConfigration(i,j,MDIO_enu_OUTPUT);
+                break;
+
+            case MDIO_enu_INPUT_PULLDOWN:
+                MDIO_enuSetPinConfigration(i,j,MDIO_enu_INPUT_PULLDOWN);
+                break; 
+
+            case MDIO_enu_INPUT_PULLUP:
+                MDIO_enuSetPinConfigration(i,j,MDIO_enu_INPUT_PULLUP);
+                break;
+            
+            default:
+                break;
+            }
+        }
+    }
+}

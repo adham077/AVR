@@ -1,6 +1,12 @@
 cmake_minimum_required(VERSION 3.11.0)
 include(${CMAKE_CURRENT_SOURCE_DIR}/../../Cmake/DIO_config.cmake)
 project(DIO_lib C)
-add_library(DIO_lib STATIC src/dio.c)
-target_include_directories(DIO_lib PUBLIC inc ../../STD_LIB)
-generate_configuration("${PORTS}")
+add_library(DIO_lib STATIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/DIO_CFG.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/dio.c
+)
+target_include_directories(DIO_lib PUBLIC
+    inc
+    ../../STD_LIB
+  )
+#generate_configuration("${PORTS}")
