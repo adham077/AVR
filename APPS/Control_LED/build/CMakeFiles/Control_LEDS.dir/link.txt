@@ -1,0 +1,1 @@
+C:\WinAVR-20100110\bin\avr-gcc.exe -mmcu=atmega32 -Wall -Os -mmcu=atmega32 CMakeFiles/Control_LEDS.dir/src/control_LED.c.obj -o Control_LEDS  DIO\libDIO_lib.a

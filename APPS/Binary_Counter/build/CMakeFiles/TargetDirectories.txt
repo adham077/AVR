@@ -1,0 +1,6 @@
+C:/ITI Intake-45 9 Months/github_repos/AVR/APPS/Binary_Counter/build/CMakeFiles/Binary_Counter.dir
+C:/ITI Intake-45 9 Months/github_repos/AVR/APPS/Binary_Counter/build/CMakeFiles/edit_cache.dir
+C:/ITI Intake-45 9 Months/github_repos/AVR/APPS/Binary_Counter/build/CMakeFiles/rebuild_cache.dir
+C:/ITI Intake-45 9 Months/github_repos/AVR/APPS/Binary_Counter/build/DIO/CMakeFiles/DIO_lib.dir
+C:/ITI Intake-45 9 Months/github_repos/AVR/APPS/Binary_Counter/build/DIO/CMakeFiles/edit_cache.dir
+C:/ITI Intake-45 9 Months/github_repos/AVR/APPS/Binary_Counter/build/DIO/CMakeFiles/rebuild_cache.dir
