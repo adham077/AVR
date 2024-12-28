@@ -1,0 +1,1 @@
+/usr/bin/avr-gcc -mmcu=atmega32 -Wall -Os -mmcu=atmega32 CMakeFiles/led_ctl.dir/src/LED_CTL.c.obj -o led_ctl  DIO/libDIO_lib.a 
