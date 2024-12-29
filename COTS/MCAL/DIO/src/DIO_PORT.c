@@ -4,6 +4,7 @@
 
 #define GET_PORT(portNum) (PORTS_BASE-(3*(uint8_t)(portNum)))
 
+/*structure holding the port registers*/
 typedef struct{
     volatile uint8_t PIN;
     volatile uint8_t DDR;
