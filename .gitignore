@@ -2,3 +2,4 @@
 *.build
 *.hex
 *.bin
+/build

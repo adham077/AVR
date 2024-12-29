@@ -1,6 +1,0 @@
-/home/adham/new_avr_repo/AVR/APPS/Task1/build/CMakeFiles/led_ctl.dir
-/home/adham/new_avr_repo/AVR/APPS/Task1/build/CMakeFiles/edit_cache.dir
-/home/adham/new_avr_repo/AVR/APPS/Task1/build/CMakeFiles/rebuild_cache.dir
-/home/adham/new_avr_repo/AVR/APPS/Task1/build/DIO/CMakeFiles/DIO_lib.dir
-/home/adham/new_avr_repo/AVR/APPS/Task1/build/DIO/CMakeFiles/edit_cache.dir
-/home/adham/new_avr_repo/AVR/APPS/Task1/build/DIO/CMakeFiles/rebuild_cache.dir
