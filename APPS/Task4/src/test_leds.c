@@ -5,9 +5,14 @@
 #include <util/delay.h>
 
 int main(void){
-    /*initializing pin states with configuration given in array*/
-    MPORT_vInit();
-   
+    /*Setting pin modes*/
+    MPORT_enuSetPinMode(PIN_A0,MPORT_enu_OUTPUT);
+    MPORT_enuSetPinMode(PIN_A1,MPORT_enu_OUTPUT);
+    MPORT_enuSetPinMode(PIN_A2,MPORT_enu_OUTPUT);
+    MPORT_enuSetPinMode(PIN_A3,MPORT_enu_INPUT_PULLUP);
+    MPORT_enuSetPinMode(PIN_A4,MPORT_enu_INPUT_PULLUP);
+    MPORT_enuSetPinMode(PIN_A5,MPORT_enu_INPUT_PULLUP);
+
     /*Button states*/
     uint8_t BUTTON1_state=MDIO_enu_pin_HIGH;
     uint8_t BUTTON2_state=MDIO_enu_pin_HIGH;
