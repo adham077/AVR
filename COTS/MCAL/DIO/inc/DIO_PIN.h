@@ -34,6 +34,7 @@ typedef enum{
 
 //Config modes
 typedef enum{
+    MDIO_enu_NOT_AVAILABLE,
     MDIO_enu_OUTPUT,
     MDIO_enu_INPUT_PULLUP,
     MDIO_enu_INPUT_PULLDOWN

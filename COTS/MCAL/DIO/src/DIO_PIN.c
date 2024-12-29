@@ -1,5 +1,4 @@
 #include "DIO_PIN.h"
-
 /*Base adresses for the ports A through D*/
 #define PTA_BASE 0X39
 #define PTB_BASE 0x36
@@ -202,3 +201,4 @@ uint8_t* Add_u8PinVal){
     
     return Loc_enuStatus;
 }
+
