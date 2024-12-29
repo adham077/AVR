@@ -1,2 +1,0 @@
-avr-ar qc libDIO_lib.a CMakeFiles/DIO_lib.dir/src/DIO_CFG.c.obj CMakeFiles/DIO_lib.dir/src/dio.c.obj
-C:\WinAVR-20100110\bin\avr-ranlib.exe libDIO_lib.a
