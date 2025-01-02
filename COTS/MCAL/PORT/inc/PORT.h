@@ -1,7 +1,7 @@
 #ifndef DIO_PORT_H_
 #define DIO_PORT_H_
 
-#include "DIO_CFG.h"
+#include "PORT_CFG.h"
 
 /*The Port_SetPinDirection API is part of the AUTOSAR Port Driver module. it allows you to change the direction of 
 a specific microcontroller pin at runtime. Pin direction determines whether the pin:*/

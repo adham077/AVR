@@ -1,5 +1,4 @@
-#include "DIO_CFG.h"
-#include "pinStates.h"
+#include "PORT_CFG.h"
 
 //Pin data initialization
 MPORT_gstPinCFG_t MPORT_garrPin_CFG[NO_OF_PINS * NO_OF_PORTS] = {

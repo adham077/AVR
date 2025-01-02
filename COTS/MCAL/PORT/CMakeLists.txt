@@ -12,13 +12,14 @@
 #set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 
 CMAKE_MINIMUM_REQUIRED(VERSION 3.11.0)
-project(DIO_lib C)
+project(PORT_lib C)
 
-add_library(DIO_lib STATIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/DIO_PIN.c
+add_library(PORT_lib STATIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/PORT_CFG.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/PORT.c
 )
 
-target_include_directories(DIO_lib PUBLIC
+target_include_directories(PORT_lib PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/inc
     ${CMAKE_CURRENT_SOURCE_DIR}/../../STD_LIB
 )
