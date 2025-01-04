@@ -10,7 +10,7 @@
 #define MAX_PORT_NO (NO_OF_PORTS-1)
 #define MAX_PIN_NO (NO_OF_PINS-1)
 
-// Port A Pins
+/* Port A Pins*/
 #define PIN_A0 0x00
 #define PIN_A1 0x01
 #define PIN_A2 0x02

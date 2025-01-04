@@ -5,6 +5,9 @@
 #define TRUE (0==0)
 #define FALSE (0!=0)
 
+#define ON (0x01)
+#define OFF (0x00)
+
 typedef unsigned char uint8_t;
 typedef signed char int8_t;
 //typedef unsigned short int uint16_t;

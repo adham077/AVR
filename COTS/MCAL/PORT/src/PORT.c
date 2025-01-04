@@ -57,17 +57,17 @@ MPORT_enuErorrStatus_t MPORT_enuSetPinMode(uint8_t Copy_enuPinNum,uint8_t Copy_e
         switch (Copy_enuPinMode){
             case MPORT_enu_OUTPUT:
                 SET_BIT(Loc_pPort->DDR,Loc_u8PinVal);
-                CLR_BIT(Loc_pPort->PORT,Copy_enuPinNum);
+                CLR_BIT(Loc_pPort->PORT,Loc_u8PinVal);
                 break;
 
             case MPORT_enu_INPUT_PULLUP:
                 CLR_BIT(Loc_pPort->DDR,Loc_u8PinVal);
-                SET_BIT(Loc_pPort->PORT,Copy_enuPinNum);
+                SET_BIT(Loc_pPort->PORT,Loc_u8PinVal);
                 break;
 
             case MPORT_enu_INPUT_PULLDOWN:
                 CLR_BIT(Loc_pPort->DDR,Loc_u8PinVal);
-                CLR_BIT(Loc_pPort->PORT,Copy_enuPinNum);
+                CLR_BIT(Loc_pPort->PORT,Loc_u8PinVal);
                 break;
 
             default:
