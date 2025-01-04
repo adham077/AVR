@@ -1,5 +1,6 @@
 #include "LED_CFG.h"
 
+/* LED Configuration array*/
 HLED_stCFG_t HLED_arrCFG[NUM_OF_LEDS]={
     [LED_1] = {
         .port = MDIO_enu_PORTC,

@@ -3,10 +3,11 @@
 
 #include "std_types.h"
 #include "bit_math.h"
-
+/*Number of ports and pins*/
 #define NO_OF_PORTS 4
 #define NO_OF_PINS 8
 
+/*Maximum port and pin numbers*/
 #define MAX_PORT_NO (NO_OF_PORTS-1)
 #define MAX_PIN_NO (NO_OF_PINS-1)
 
@@ -20,7 +21,7 @@
 #define PIN_A6 0x06
 #define PIN_A7 0x07
 
-// Port B Pins
+/* Port B Pins*/
 #define PIN_B0 0x10
 #define PIN_B1 0x11
 #define PIN_B2 0x12
@@ -30,7 +31,7 @@
 #define PIN_B6 0x16
 #define PIN_B7 0x17
 
-// Port C Pins
+/* Port C Pins*/
 #define PIN_C0 0x20
 #define PIN_C1 0x21
 #define PIN_C2 0x22
@@ -40,7 +41,7 @@
 #define PIN_C6 0x26
 #define PIN_C7 0x27
 
-// Port D Pins
+/* Port D Pins*/
 #define PIN_D0 0x30
 #define PIN_D1 0x31
 #define PIN_D2 0x32
@@ -50,13 +51,13 @@
 #define PIN_D6 0x36
 #define PIN_D7 0x37
 
-//Direction Modes
+/* Direction Modes*/
 typedef enum{
     MPORT_enu_dir_OUTPUT=0,
     MPORT_enu_dir_INPUT=1
 }MPORT_enuPinDir_t;
 
-//Pin Modes
+/* Pin Modes*/
 typedef enum{
     MPORT_enu_NOT_AVAILABLE,
     MPORT_enu_OUTPUT,
@@ -67,7 +68,7 @@ typedef enum{
     MPORT_enu_PWM
 }MPORT_enuPinMode_t;
 
-//Error Status
+/* Error Status*/
 typedef enum{
     MPORT_enu_OK,
     MPORT_enu_NOK,
@@ -75,14 +76,14 @@ typedef enum{
     MPORT_enu_INVALID_DIR
 }MPORT_enuErorrStatus_t;
 
-//Struct that holds data for each pin
+/* Struct that holds data for each pin*/
 typedef struct{
     uint8_t pin;
     MPORT_enuPinDir_t dir;
     MPORT_enuPinMode_t mode;
 }MPORT_gstPinCFG_t;
 
-//Array of structs holding data for each pin
+/* Array of structs holding data for each pin*/
 extern MPORT_gstPinCFG_t MPORT_garrPin_CFG[NO_OF_PINS*NO_OF_PORTS];
 
 
