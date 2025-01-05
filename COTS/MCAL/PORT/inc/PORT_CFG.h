@@ -8,9 +8,11 @@
 #define NO_OF_PINS 8
 
 /*Maximum port and pin numbers*/
+#ifndef PORT_VALUES
+#define PORT_VALUES
 #define MAX_PORT_NO (NO_OF_PORTS-1)
 #define MAX_PIN_NO (NO_OF_PINS-1)
-
+#endif
 /* Port A Pins*/
 #define PIN_A0 0x00
 #define PIN_A1 0x01

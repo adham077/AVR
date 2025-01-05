@@ -4,11 +4,16 @@
 #include "bit_math.h"
 #include "std_types.h"
 
+
 #define MIN_PORT_VAL 0
 #define MAX_PORT_VAL 0xFF
 
+#ifndef PORT_VALUES
+#define PORT_VALUES
 #define MAX_PORT_NO 3
 #define MAX_PIN_NO 7
+#endif
+
 #define MAX_PIN_VAL_NO 1
 #define MAX_PORT_VAL_NO 1
 

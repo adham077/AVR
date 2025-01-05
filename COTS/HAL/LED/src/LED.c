@@ -38,5 +38,6 @@ HLED_enuErrorStatus_t LED_enuSetState(uint8_t Copy_u8LED,uint8_t Copy_u8State){
             !Copy_u8State);  
         }
     }    
+    return Loc_enuStatus;
 }
 
