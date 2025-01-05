@@ -1,0 +1,2 @@
+avr-ar qc libLED_lib.a CMakeFiles/LED_lib.dir/src/LED.c.obj CMakeFiles/LED_lib.dir/src/LED_CFG.c.obj
+C:\WinAVR-20100110\bin\avr-ranlib.exe libLED_lib.a

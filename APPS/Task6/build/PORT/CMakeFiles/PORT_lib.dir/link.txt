@@ -1,0 +1,2 @@
+avr-ar qc libPORT_lib.a CMakeFiles/PORT_lib.dir/src/PORT_CFG.c.obj CMakeFiles/PORT_lib.dir/src/PORT.c.obj
+C:\WinAVR-20100110\bin\avr-ranlib.exe libPORT_lib.a

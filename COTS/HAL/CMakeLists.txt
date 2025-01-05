@@ -9,7 +9,8 @@ add_subdirectory(${MCAL_LIB_PATH}  "${CMAKE_BINARY_DIR}/MCAL")
 
 set(HAL_SUBDIRS
     "LED"
-    "SWITCH"   
+    "SWITCH"
+    "SEVEN_SEGMENT"   
 )
 foreach(SUBDIR ${HAL_SUBDIRS})
     set(LIB_PATH "${HAL_LIB_PATH}/${SUBDIR}")

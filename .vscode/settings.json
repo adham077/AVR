@@ -1,6 +1,8 @@
 {
     "C_Cpp.errorSquiggles": "enabled",
     "files.associations": {
-        "dio_pin.h": "c"
+        "dio_pin.h": "c",
+        "segment7.h": "c",
+        "segment7_cfg.h": "c"
     }
 }

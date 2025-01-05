@@ -1,0 +1,3 @@
+file(REMOVE_RECURSE
+  "libSEVEN_SEGMENT_lib.a"
+)

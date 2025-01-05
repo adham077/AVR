@@ -1,0 +1,2 @@
+avr-ar qc libSWITCH_lib.a CMakeFiles/SWITCH_lib.dir/src/SWITCH.c.obj CMakeFiles/SWITCH_lib.dir/src/SWITCH_CFG.c.obj
+C:\WinAVR-20100110\bin\avr-ranlib.exe libSWITCH_lib.a
