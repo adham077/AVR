@@ -1,3 +1,4 @@
+#define F_CPU  1000000UL
 #include "LED.h"
 #include "SWITCH.h"
 #include "util/delay.h"

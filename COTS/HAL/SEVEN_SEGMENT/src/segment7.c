@@ -61,14 +61,15 @@ MDIO_enuErrorStatus_t H7SEG_enuSetValue(uint8_t Copy_u8Segment7Number,uint8_t Co
     else{
         uint8_t i=0;
         for(;i<8;i++){
-            /*Set the value of the pins based on the value of the seven segment display*/
-            
+            uint8_t Loc_u8Port = H7SEG_arrPinVal[Copy_u8Segment7Number][i].port;
+            uint8_t loc_u8Pin = H7SEG_arrPinVal[Copy_u8Segment7Number][i].pin;
+            uint8_t loc_u8Mode = GET_BIT(H7SEG_arrValuesMap[Copy_u8Value],i);
             /*The XOR operation is used to invert the value of the pin 
             if the seven segment display is common anode*/
+            loc_u8Mode^=H7SEG_arrConfigParam[Copy_u8Segment7Number].segment7_mode;
+            /*Set the value of the pins based on the value of the seven segment display*/
 
-            Local_enuStatus = MDIO_enuSetPinValue(H7SEG_arrPinVal[Copy_u8Segment7Number][i].port,
-            H7SEG_arrPinVal[Copy_u8Segment7Number][i].pin,
-            GET_BIT(H7SEG_arrValuesMap[Copy_u8Value],i)^H7SEG_arrConfigParam[Copy_u8Segment7Number].segment7_mode);
+            Local_enuStatus = MDIO_enuSetPinValue(Loc_u8Port,loc_u8Pin,loc_u8Mode);
             
             if(Local_enuStatus != H7SEG_enu_OK){
                 break;

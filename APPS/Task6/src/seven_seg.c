@@ -3,11 +3,13 @@
 #include "util/delay.h"
 
 int main(void){
+    /*Initialize the seven segment displays*/
     H7SEG_vInit();
     uint8_t count=0;
    
 
     while(1){
+        /*Display the count value on the seven segment displays*/
         H7SEG_enuSetMulVal(count);
         count++;
         count%=100;
